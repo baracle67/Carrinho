@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4090544643293973304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/metal
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/metal
+  Guid:
+    Data1: -404710697
+    Data2: 1173066100
+    Data3: 1556321945
+    Data4: 1435962874
+  Banks:
+  - {fileID: 2967625047525701012}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-2444688008664338858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,12 +73,14 @@ MonoBehaviour:
   - {fileID: -2444688008664338858}
   - {fileID: 855600135467627305}
   - {fileID: 83049630930737455}
+  - {fileID: -4090544643293973304}
+  - {fileID: 4379109450369637231}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2967625047525701012}
   StringsBanks:
   - {fileID: 1229673410871960656}
-  cacheTime: 639154049460870495
+  cacheTime: 639160087949854066
   cacheVersion: 131619
 --- !u!114 &83049630930737455
 MonoBehaviour:
@@ -79,7 +108,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1200
+  Length: 1120
 --- !u!114 &855600135467627305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,10 +151,10 @@ MonoBehaviour:
   Path: ../CarrihnoFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639154049460870495
+  lastModified: 639160087949854066
   FileSizes:
   - Name: Desktop
-    Value: 870
+    Value: 950
   Exists: 1
 --- !u!114 &2967625047525701012
 MonoBehaviour:
@@ -142,8 +171,35 @@ MonoBehaviour:
   Path: ../CarrihnoFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639154049460858203
+  lastModified: 639160087949808159
   FileSizes:
   - Name: Desktop
-    Value: 1430496
+    Value: 1461440
   Exists: 1
+--- !u!114 &4379109450369637231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/carro
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/carro
+  Guid:
+    Data1: -225890823
+    Data2: 1266547010
+    Data3: -1135568504
+    Data4: -739861525
+  Banks:
+  - {fileID: 2967625047525701012}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1120
