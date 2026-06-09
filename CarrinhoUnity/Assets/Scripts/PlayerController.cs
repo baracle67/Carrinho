@@ -28,23 +28,18 @@ public class PlayerController : MonoBehaviour
         inputActions.FindActionMap("Player").Disable(); 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = moveAction.ReadValue<Vector2>().x;
-        verticalInput = moveAction.ReadValue<Vector2>().y;
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
+    
         if (verticalInput > 0)
         {
             // Move o ve�culo para frente a partir do Input vertical
-            transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+            transform.Translate(Vector3.forward * Time.deltaTime * speed * moveInput.y);
         }
         // Rotaciona o carro a partir do Input horizontal
-        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * moveInput.x);
     }
 }
